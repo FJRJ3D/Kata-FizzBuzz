@@ -2,20 +2,41 @@ package com.fizzbuzz;
 
 public class FizzBuzz {
 
-    public void FizzBuzzMethod(){
-        for (int index =1; 100>=index; index++){
-            int number1 = (index/10)%10;
-            int number2 = index%10;
+    public boolean divisibleByThree(int number){
+        return number%3 == 0;
+    }
 
-            if (index % 3 == 0 && index % 5 == 0 || index%3 ==0 && number1 ==5 ||index%3 ==0 &&  number2 ==5 || index%5 ==0 && number1==3||index%5 ==0 &&number2==3||number1==3&&number2==5||number1==5&&number2==3){
-                System.out.println("FizzBuzz");
-            }else if (number1 ==3 || index%3 == 0||number2==3) {
-                System.out.println("Fizz");
-            }else if (number1==5 || index%5 ==0||number2==5) {
-                System.out.println("Buzz");
-            }else {
-                System.out.println(index);
-            }
-        }
+    public boolean divisibleByFive(int number){
+        return number%5 == 0;
+    }
+
+    public boolean divisibleByThreeAndFive(int number){
+        return divisibleByFive(number) && divisibleByThree(number);
+    }
+
+    public boolean numberHasThree(int number){
+        int number1 = (number/10)%10;
+        int number2 = number%10;
+
+        return number1 == 3 || number2 == 3;
+    }
+
+    public boolean numberHasFive(int number){
+        int number1 = (number/10)%10;
+        int number2 = number%10;
+
+        return number1 == 5 || number2 == 5;
+    }
+
+    public boolean booleanFizz(int number){
+        return divisibleByThree(number) || numberHasThree(number);
+    }
+
+    public boolean booleanBuzz(int number){
+        return divisibleByFive(number) || numberHasFive(number);
+    }
+
+    public boolean booleanFizzBuzz(int number){
+        return booleanFizz(number) && booleanBuzz(number);
     }
 }
