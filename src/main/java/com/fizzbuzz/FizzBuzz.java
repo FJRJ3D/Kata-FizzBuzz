@@ -1,5 +1,7 @@
 package com.fizzbuzz;
 
+import java.util.ArrayList;
+
 public class FizzBuzz {
 
     public boolean divisibleByThree(int number){
@@ -38,5 +40,24 @@ public class FizzBuzz {
 
     public boolean booleanFizzBuzz(int number){
         return booleanFizz(number) && booleanBuzz(number);
+    }
+
+    public ArrayList<String> methodFizzBuzz() {
+
+        ArrayList<String> result = new ArrayList<>();
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        for (int index = 1; 100 >= index; index++) {
+            if (fizzBuzz.booleanFizzBuzz(index)) {
+                result.add("FizzBuzz");
+            } else if (fizzBuzz.booleanBuzz(index)) {
+                result.add("Buzz");
+            } else if (fizzBuzz.booleanFizz(index)) {
+                result.add("Fizz");
+            } else {
+                result.add(String.valueOf(index));
+            }
+        }
+        return result;
     }
 }

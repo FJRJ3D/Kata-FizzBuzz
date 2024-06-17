@@ -1,8 +1,11 @@
 package com.fizzbuzz;
 
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
 
 
 public class FizzBuzzTest {
@@ -54,5 +57,29 @@ public class FizzBuzzTest {
     public void test_booleanFizzBuzz() {
         boolean result = fizzBuzz.booleanFizzBuzz(35);
         assertTrue(result);
+    }
+
+    @Test
+    public void test_methodFizzBuzz() {
+
+        ArrayList<String> result = fizzBuzz.methodFizzBuzz();
+        ArrayList<String> expected = new ArrayList<>();
+
+        for (int index = 1; 100 >= index; index++) {
+            if (fizzBuzz.booleanFizzBuzz(index)) {
+                expected.add("FizzBuzz");
+            } else if (fizzBuzz.booleanBuzz(index)) {
+                expected.add("Buzz");
+            } else if (fizzBuzz.booleanFizz(index)) {
+                expected.add("Fizz");
+            } else {
+                expected.add(String.valueOf(index));
+            }
+        }
+        System.out.println(expected);
+        System.out.println(result);
+
+        assertEquals(expected, result);
+
     }
 }
