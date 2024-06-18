@@ -1,6 +1,6 @@
 # Kata FizzBuzz Java
 
---------------------------------------------------------------------
+
 
 ## Requeriments
 
@@ -18,7 +18,7 @@
 - Returns **Fizz** if the number is divisible by 3 or if **it contains a 3**. (E.g., Fizz if the number is 534).
 - Returns Buzz if the number is divisible by 5 or if **it contains a 5**. (E.g., Buzz if the number is 25).
 
-------------------------------------------------------------------------
+
 ## Solution:
 
 - I have created different **boolean methods** for each **condition**, first those from the first part of the
