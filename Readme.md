@@ -4,31 +4,30 @@
 
 ## Requeriments
 
-<strong>Write a program wich print the numbers from 1 to 100:</strong>
+<strong>Write a program which prints the numbers from 1 to 100:</strong>
 
 ### Stage 1:
 
-- Devuelve Fizz si el número es divisible por 3.
-- Devuelve Buzz si el número es divisible por 5.
-- Devuelve FizzBuzz si el número es divisible por 3 y por 5.
-- Devuelve el mismo número si no se cumple nada de lo anterior.
+- Returns **Fizz** if the number is **divisible by 3**.
+- Returns **Buzz** if the number is **divisible by 5**.
+- Returns **FizzBuzz** if the number is **divisible by both 3 and 5**.
+- Returns the number itself if none of the above conditions are met.
 
 ### Stage 2:
 
-- Devuelve Fizz si el número es divisible por 3 o si contiene un 3. (Ej.: Fizz si el número es 534)
-- Devuelve Buzz si el número es divisible por 5 o si contiene un 5. (Ej.: Buzz si el número es 25).
+- Returns **Fizz** if the number is divisible by 3 or if **it contains a 3**. (E.g., Fizz if the number is 534).
+- Returns Buzz if the number is divisible by 5 or if **it contains a 5**. (E.g., Buzz if the number is 25).
 
 ------------------------------------------------------------------------
-## Resolución:
+## Solution:
 
-- He creado diferentes metodos booleanos para cada condición, primero
-los de la primera parte del ejercicio y luego los de la segunda parte.
-- A cada metodo le he creado un test para verificar de que funciona
-independientemente.
-- Por ultimo he creado otro metodo con un bucle for y una condicional
-para que en una arraylist añada el numero, "Fizz", "Buzz" o "FizzBuzz".
-- Transformo el int en un String.
-- Retorno el resultado de la arraylist en el metodo.
-- Creo un test para comprobar que la array list arroja los resultados deseados.
+- I have created different **boolean methods** for each **condition**, first those from the first part of the
+exercise and then those from the second part.
+- I have created a **test** for each **method** to verify that it works independently.
+- Finally, I have created another **method** with a **for loop** and a **conditional statement** to add the **number,
+"Fizz", "Buzz", or "FizzBuzz"** to an **ArrayList**.
+- I transform the **int** to a **String**.
+- I **return** the result of the **ArrayList** in the **method**.
+- I create a **test** to check that the **ArrayList** returns the desired results.
 
  
