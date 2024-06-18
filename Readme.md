@@ -1,7 +1,4 @@
 # Kata FizzBuzz Java
-
-
-
 ## Requeriments
 
 <strong>Write a program which prints the numbers from 1 to 100:</strong>
