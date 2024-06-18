@@ -1,4 +1,5 @@
 # Kata FizzBuzz Java
+
 ## Requeriments
 
 <strong>Write a program which prints the numbers from 1 to 100:</strong>
@@ -14,7 +15,6 @@
 
 - Returns **Fizz** if the number is divisible by 3 or if **it contains a 3**. (E.g., Fizz if the number is 534).
 - Returns Buzz if the number is divisible by 5 or if **it contains a 5**. (E.g., Buzz if the number is 25).
-
 
 ## Solution:
 
